@@ -11,6 +11,14 @@
 
 .logo {
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_nome {
+  position: relative;
+  top: -3px;
+  display: none;
 }
 
 .menu_nav {
@@ -87,4 +95,77 @@
 .menu_nav.mostrarItensMenu {
   right: 0px;
   animation: mostrar 0.3s forwards;
+}
+
+@media (min-width: 360px) {
+  .menu_nav {
+    width: 300px;
+  }
+  .logo {
+    padding-left: 40px;
+  }
+  .icone_menu_mobile {
+    margin-right: 40px;
+  }
+}
+
+/*Responsividade*/
+@media (min-width: 680px) {
+  .menu {
+    align-items: center;
+  }
+  .icone_menu_mobile {
+    display: none;
+  }
+  .menu_nav {
+    background: none;
+    position: static;
+    padding: 0px;
+    width: auto;
+    padding-right: 40px;
+  }
+  .menu_nav ul {
+    display: flex;
+  }
+  .menu_nav ul li + li {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  .menu_nav ul li a {
+    padding: 0px 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    padding-left: 40px;
+  }
+  @keyframes mostrar_nome_logo {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .logo_nome {
+    display: block;
+    animation: mostrar_nome_logo 0.3s forwards;
+  }
+}
+
+@media (min-width: 950px) {
+  .logo {
+    padding-left: 80px;
+  }
+  .menu_nav {
+    padding-right: 80px;
+  }
+  .menu_nav ul li a {
+    font-size: 20px;
+  }
 }
