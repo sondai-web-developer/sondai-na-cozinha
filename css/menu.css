@@ -97,7 +97,9 @@
   animation: mostrar 0.3s forwards;
 }
 
-@media (min-width: 360px) {
+/*Responsividade*/
+
+@media (min-width: 430px) {
   .menu_nav {
     width: 300px;
   }
@@ -109,7 +111,6 @@
   }
 }
 
-/*Responsividade*/
 @media (min-width: 680px) {
   .menu {
     align-items: center;
@@ -139,9 +140,6 @@
 }
 
 @media (min-width: 768px) {
-  .logo {
-    padding-left: 40px;
-  }
   @keyframes mostrar_nome_logo {
     from {
       opacity: 0;
