@@ -1,0 +1,24 @@
+.unidades {
+  padding: 40px 0;
+}
+
+.unidades h1 {
+  grid-column: 2;
+}
+
+.item_unidade {
+  grid-column: 1 / -1;
+}
+
+.infos_unidade {
+  padding: 0 20px;
+}
+
+@media (min-width: 430px) {
+  .item_unidade {
+    grid-column: 2;
+  }
+  .infos_unidade {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,8 @@
+.rodape {
+  padding: 40px 0;
+}
+
+.rodape img,
+.rodape p {
+  grid-column: 2;
+}
