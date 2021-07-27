@@ -1,0 +1,10 @@
+/*Sobre Mim*/
+.sobre_mim {
+  padding: 40px 0;
+}
+
+.sobre_mim h1,
+.sobre_mim p,
+.sobre_mim img {
+  grid-column: 2;
+}

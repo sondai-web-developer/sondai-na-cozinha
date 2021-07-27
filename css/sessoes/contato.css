@@ -1,0 +1,9 @@
+.contato {
+  padding: 40px 0;
+}
+
+.contato h1,
+.contato form,
+.redes_sociais {
+  grid-column: 2;
+}

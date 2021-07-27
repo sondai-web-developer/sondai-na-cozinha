@@ -1,0 +1,31 @@
+.intro,
+.sobre_mim,
+.servicos,
+.unidades,
+.contato,
+footer {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+}
+
+@media (min-width: 430px) {
+  .intro,
+  .sobre_mim,
+  .servicos,
+  .unidades,
+  .contato,
+  footer {
+    grid-template-columns: 40px 1fr 40px;
+  }
+}
+
+@media (min-width: 950px) {
+  .intro,
+  .sobre_mim,
+  .servicos,
+  .unidades,
+  .contato,
+  footer {
+    grid-template-columns: 80px 1fr 80px;
+  }
+}
