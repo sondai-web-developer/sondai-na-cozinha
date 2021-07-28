@@ -1,7 +1,6 @@
-/*Abrir e fechar menu mobile*/
-function menuMobile() {
-  const iconeMenuMobile = document.querySelector('.icone_menu_mobile');
-  const menuNav = document.querySelector('.menu_nav');
+export default function menuMobile() {
+  const iconeMenuMobile = document.querySelector('[data-menu-mobile="icone"]');
+  const menuNav = document.querySelector('[data-menu-mobile="lista"]');
 
   function abrirFecharMenu() {
     iconeMenuMobile.classList.toggle('transformarIcone');
@@ -10,5 +9,3 @@ function menuMobile() {
 
   iconeMenuMobile.addEventListener('click', abrirFecharMenu);
 }
-
-menuMobile();
