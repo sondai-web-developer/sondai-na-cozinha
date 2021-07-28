@@ -1,5 +1,8 @@
 .intro {
   padding-top: 127px;
+  background: #edd49e;
+  text-align: center;
+  color: #533100;
 }
 
 .intro h1,
@@ -7,4 +10,104 @@
 .intro p,
 .intro img {
   grid-column: 2;
+}
+
+.intro h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 44px;
+  font-weight: 700px;
+  line-height: 1;
+}
+
+.intro h2 {
+  font-family: "Assistant", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  font-family: "Assistant", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.intro img {
+  margin: 0 auto;
+}
+
+.intro img[src="img/intro/intro_1.png"] {
+  display: block;
+  animation: show-up 0.4s forwards;
+}
+
+.intro img[src="img/intro/intro_2.png"],
+.intro img[src="img/intro/intro_3.png"] {
+  display: none;
+}
+
+@media (min-width: 530px) {
+  .intro {
+    padding-top: 124px;
+  }
+
+  .intro h1 {
+    font-size: 70px;
+  }
+
+  .intro h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .intro p {
+    display: none;
+  }
+
+  .intro img[src="img/intro/intro_2.png"] {
+    display: block;
+    animation: show-up 0.4s forwards;
+  }
+
+  .intro img[src="img/intro/intro_1.png"],
+  .intro img[src="img/intro/intro_3.png"] {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .intro {
+    padding-top: 95px;
+  }
+
+  .intro h1 {
+    font-size: 90px;
+  }
+
+  .intro h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+
+  .intro img[src="img/intro/intro_3.png"] {
+    display: block;
+    animation: show-up 0.4s forwards;
+  }
+
+  .intro img[src="img/intro/intro_1.png"],
+  .intro img[src="img/intro/intro_2.png"] {
+    display: none;
+  }
 }
