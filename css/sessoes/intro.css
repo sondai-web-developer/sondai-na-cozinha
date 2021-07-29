@@ -49,7 +49,6 @@
 }
 
 .intro img[src="img/intro/intro_1.png"] {
-  display: block;
   animation: show-up 0.4s forwards;
 }
 
