@@ -1,10 +1,127 @@
 /*Sobre Mim*/
 .sobre_mim {
   padding: 40px 0;
+  color: #533100;
+  background: #fffaf0;
 }
 
 .sobre_mim h1,
-.sobre_mim p,
+.paragrafos,
 .sobre_mim img {
   grid-column: 2;
+}
+
+.sobre_mim h1 {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.paragrafos {
+  font-family: "Assistant", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.paragrafos p:last-child {
+  margin-bottom: 60px;
+}
+
+.sobre_mim img {
+  margin: 0 auto;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.sobre_mim img[src="img/sobre_mim/sobre_mim_1.png"] {
+  animation: show-up 0.4s forwards;
+}
+
+.sobre_mim img[src="img/sobre_mim/sobre_mim_2.png"],
+.sobre_mim img[src="img/sobre_mim/sobre_mim_3.png"] {
+  display: none;
+}
+
+@media (min-width: 430px) {
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_2.png"] {
+    display: block;
+    animation: show-up 0.4s forwards;
+  }
+
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_1.png"],
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_3.png"] {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sobre_mim {
+    grid-template-columns: 40px repeat(2, 1fr) 40px;
+  }
+
+  .sobre_mim h1 {
+    grid-column: 2 / 4;
+  }
+
+  .paragrafos {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .sobre_mim img {
+    grid-column: 3;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-self: center;
+    justify-self: end;
+  }
+}
+
+@media (min-width: 950px) {
+  .sobre_mim {
+    grid-template-columns: 80px repeat(2, 1fr) 80px;
+  }
+
+  .paragrafos {
+    padding-right: 20px;
+  }
+
+  .sobre_mim img {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_3.png"] {
+    display: block;
+    animation: show-up 0.4s forwards;
+  }
+
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_1.png"],
+  .sobre_mim img[src="img/sobre_mim/sobre_mim_2.png"] {
+    display: none;
+  }
+}
+
+@media (min-width: 1126px) {
+  .sobre_mim h1 {
+    font-size: 40px;
+  }
+
+  .paragrafos {
+    font-size: 20px;
+  }
 }
