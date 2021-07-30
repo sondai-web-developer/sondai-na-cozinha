@@ -1,9 +1,212 @@
 .contato {
   padding: 40px 0;
+  background: #edd49e;
+  border-bottom: 1px solid #533100;
 }
 
 .contato h1,
 .contato form,
 .redes_sociais {
   grid-column: 2;
+}
+
+.contato h1 {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #533100;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  justify-self: center;
+}
+
+[name="email"] {
+  background: none;
+  border: 2px solid #533100;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #533100;
+  margin-bottom: 20px;
+  width: 265px;
+}
+
+::-webkit-input-placeholder {
+  color: #533100;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+input:-moz-placeholder {
+  color: #533100;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+button[type="submit"] {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fffaf0;
+  background: #6f8c04;
+  width: 180px;
+  border-radius: 8px;
+  padding: 13px 0;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  text-transform: uppercase;
+}
+
+.redes_sociais {
+  justify-self: center;
+}
+
+.item_redes {
+  display: flex;
+  align-items: center;
+}
+
+.item_redes + .item_redes {
+  margin-top: 20px;
+}
+
+.item_redes a {
+  margin-left: 10px;
+  font-family: "Assistant", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #533100;
+}
+
+@media (min-width: 430px) {
+  .contato {
+    grid-template-columns: 40px repeat(2, 1fr) 40px;
+    padding-bottom: 0px;
+    border-bottom-color: transparent;
+  }
+
+  .contato::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #533100;
+    grid-column: 2 / 4;
+    margin-top: 40px;
+  }
+
+  .contato h1,
+  .contato form,
+  .redes_sociais {
+    grid-column: 2 / 4;
+  }
+
+  .contato h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  [name="email"] {
+    width: 320px;
+  }
+}
+
+@media (min-width: 530px) {
+  [name="email"] {
+    width: 380px;
+  }
+}
+
+@media (min-width: 730px) {
+  .contato h1,
+  .contato form {
+    grid-column: 3;
+  }
+
+  .contato h1 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .contato form {
+    flex-direction: row;
+    align-items: center;
+    justify-self: start;
+  }
+
+  [name="email"] {
+    text-align: left;
+  }
+
+  .redes_sociais {
+    justify-self: start;
+  }
+
+  [name="email"] {
+    width: 265px;
+    margin-bottom: 0;
+    margin-right: 7px;
+  }
+
+  button[type="submit"] {
+    width: 126px;
+    font-size: 15px;
+  }
+
+  .redes_sociais {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    padding-right: 30px;
+  }
+
+  .item_redes + .item_redes {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 916px) {
+  .item_redes + .item_redes {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .contato {
+    grid-template-columns: 80px 1fr 2fr 80px;
+  }
+
+  .contato h1 {
+    width: 470px;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  [name="email"] {
+    width: 380px;
+  }
+
+  button[type="submit"] {
+    width: 180px;
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .item_redes a {
+    font-size: 20px;
+  }
 }
