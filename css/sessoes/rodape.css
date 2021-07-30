@@ -1,8 +1,70 @@
 .rodape {
   padding: 40px 0;
+  background: #edd49e;
+  color: #533100;
 }
 
 .rodape img,
 .rodape p {
-  grid-column: 2;
+  grid-column: 1 / -1;
+}
+
+.rodape img {
+  width: 70px;
+  height: 70px;
+  justify-self: center;
+  margin-bottom: 15px;
+}
+
+.rodape p {
+  font-family: "Assistant", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.rodape a {
+  color: #533100;
+  font-weight: 400;
+  display: inline-block;
+}
+
+@media (min-width: 480px) {
+  .rodape {
+    grid-template-columns: 40px 1fr 3fr 40px;
+    align-content: center;
+  }
+
+  .rodape img {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 14px;
+  }
+
+  .rodape p {
+    grid-column: 3;
+    text-align: right;
+    width: 280px;
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .rodape p {
+    width: 350px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 950px) {
+  .rodape {
+    grid-template-columns: 80px 1fr 3fr 80px;
+  }
+
+  .rodape p {
+    width: 400px;
+    font-size: 20px;
+  }
 }
