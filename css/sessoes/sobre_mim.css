@@ -73,6 +73,7 @@
 
   .sobre_mim h1 {
     grid-column: 2 / 4;
+    margin-bottom: 40px;
   }
 
   .paragrafos {
