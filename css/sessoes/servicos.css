@@ -1,134 +1,16 @@
 .item_servico {
   grid-column: 1 / -1;
-  position: relative;
+  background: gray;
 }
 
 #organico,
 #receitas,
 #cursos {
-  max-width: 320px;
-  height: 400px;
+  max-width: 430px;
+  height: 538px;
 }
 
 #organico {
-  background: url("../../img/servicos/organico_1.png");
-}
-
-#receitas {
-  background: url("../../img/servicos/receitas_1.png");
-}
-
-#cursos {
-  background: url("../../img/servicos/cursos_1.png");
-}
-
-.item_servico h2 {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  text-align: center;
-  margin-top: 180px;
-}
-
-@keyframes mostrar-texto {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.descricao {
-  background: #533100;
-  position: absolute;
-  top: 0;
-  height: 400px;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.descricao p {
-  color: #fffaf0;
-  font-family: "Assistant", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  max-width: 280px;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.descricao p:first-child {
-  margin-bottom: 20px;
-}
-
-[data-descricao="texto_receitas"] p:first-child {
-  margin-bottom: 0px;
-}
-
-.icone_descricao {
-  display: block;
-  width: 20px;
-  height: 16px;
-  color: #ffffff;
-  border-top: 2px solid currentColor;
-  position: absolute;
-  z-index: 200;
-  top: 22px;
-  left: 20px;
-  cursor: pointer;
-}
-
-.icone_descricao::before {
-  content: "";
-  display: block;
-  margin-top: 6px;
-  height: 2px;
-  width: 70%;
-  background: currentColor;
-}
-
-.icone_descricao::after {
-  content: "";
-  display: block;
-  margin-top: 6px;
-  height: 2px;
-  width: 50%;
-  background: currentColor;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-[data-descricao="icone_organico"].mudarIcone,
-[data-descricao="icone_receitas"].mudarIcone,
-[data-descricao="icone_cursos"].mudarIcone {
-  border-top-color: transparent;
-}
-
-[data-descricao="icone_organico"].mudarIcone::before,
-[data-descricao="icone_receitas"].mudarIcone::before,
-[data-descricao="icone_cursos"].mudarIcone::before {
-  width: 100%;
-  transform: rotate(45deg);
-}
-
-[data-descricao="icone_organico"].mudarIcone::after,
-[data-descricao="icone_receitas"].mudarIcone::after,
-[data-descricao="icone_cursos"].mudarIcone::after {
-  width: 100%;
-  top: -8px;
-  transform: rotate(135deg);
-}
-
-[data-descricao="texto_organico"].mostrarTexto,
-[data-descricao="texto_receitas"].mostrarTexto,
-[data-descricao="texto_cursos"].mostrarTexto {
-  display: flex;
-  animation: mostrar-texto 0.3s ease;
+  background: url("../../img/servicos/organico_1.png") center center;
+  background-size: cover;
 }
