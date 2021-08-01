@@ -99,29 +99,21 @@
   transition: transform 0.3s ease;
 }
 
-[data-descricao="icone_organico"].mudarIcone,
-[data-descricao="icone_receitas"].mudarIcone,
-[data-descricao="icone_cursos"].mudarIcone {
+[data-descricao="icone"].mudarIcone {
   border-top-color: transparent;
 }
 
-[data-descricao="icone_organico"].mudarIcone::before,
-[data-descricao="icone_receitas"].mudarIcone::before,
-[data-descricao="icone_cursos"].mudarIcone::before {
+[data-descricao="icone"].mudarIcone::before {
   width: 100%;
   transform: rotate(45deg);
 }
 
-[data-descricao="icone_organico"].mudarIcone::after,
-[data-descricao="icone_receitas"].mudarIcone::after,
-[data-descricao="icone_cursos"].mudarIcone::after {
+[data-descricao="icone"].mudarIcone::after {
   width: 100%;
   top: -8px;
   transform: rotate(135deg);
 }
 
-[data-descricao="texto_organico"].mostrarTexto,
-[data-descricao="texto_receitas"].mostrarTexto,
-[data-descricao="texto_cursos"].mostrarTexto {
+[data-descricao="texto"].mostrarTexto {
   opacity: 1;
 }
