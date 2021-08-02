@@ -1,13 +1,9 @@
-.item_servico {
+.servicos ul {
   grid-column: 1 / -1;
-  position: relative;
 }
 
-#organico,
-#receitas,
-#cursos {
-  max-width: 380px;
-  height: 476px;
+.item_servico {
+  position: relative;
 }
 
 #organico {
@@ -16,11 +12,13 @@
 }
 
 #receitas {
-  background: url("../../img/servicos/receitas_1.png");
+  background: url("../../img/servicos/receitas_1.png") center center;
+  background-size: cover;
 }
 
 #cursos {
-  background: url("../../img/servicos/cursos_1.png");
+  background: url("../../img/servicos/cursos_1.png") center center;
+  background-size: cover;
 }
 
 .item_servico h2 {
@@ -31,14 +29,14 @@
   text-transform: uppercase;
   letter-spacing: 6px;
   text-align: center;
-  margin-top: 215px;
+  padding: 215px 0;
 }
 
 .descricao {
   background: #533100;
   position: absolute;
   top: 0;
-  height: 476px;
+  height: 478px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -116,4 +114,13 @@
 
 [data-descricao="texto"].mostrarTexto {
   opacity: 1;
+}
+
+/*Slide*/
+.servicos ul {
+  display: flex;
+}
+
+.item_servico {
+  flex: 1 0 363px;
 }
