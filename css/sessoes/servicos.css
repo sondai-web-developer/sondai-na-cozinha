@@ -117,10 +117,29 @@
 }
 
 /*Slide*/
+.servicos {
+  overflow: hidden;
+}
+
 .servicos ul {
   display: flex;
 }
 
 .item_servico {
-  flex: 1 0 363px;
+  flex-shrink: 0;
+  width: 100vh;
+  max-width: 363px;
+  margin: 0 20px;
+}
+
+.item_servico:first-child {
+  margin-left: 0px;
+}
+
+.item_servico:last-child {
+  margin-right: 0px;
+}
+
+.servicos ul {
+  transform: translate3d(-500px, 0px, 0px);
 }
