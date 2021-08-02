@@ -139,7 +139,3 @@
 .item_servico:last-child {
   margin-right: 0px;
 }
-
-.servicos ul {
-  transform: translate3d(-500px, 0px, 0px);
-}
