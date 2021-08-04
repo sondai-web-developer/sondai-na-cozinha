@@ -1,5 +1,5 @@
 export default function logoScrollTop() {
-  const logo = document.querySelector('[data-scroll-top="logo"]');
+  const logos = document.querySelectorAll('[data-scroll-top="logo"]');
 
   function scrollTop(event) {
     event.preventDefault();
@@ -9,5 +9,7 @@ export default function logoScrollTop() {
     });
   }
 
-  logo.addEventListener('click', scrollTop);
+  logos.forEach((logo) => {
+    logo.addEventListener('click', scrollTop);
+  });
 }
