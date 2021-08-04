@@ -56,12 +56,8 @@
   line-height: 1.6;
 }
 
-.descricao p:first-child {
-  margin-bottom: 20px;
-}
-
-[data-descricao="texto_receitas"] p:first-child {
-  margin-bottom: 0px;
+.descricao p + p {
+  margin-top: 20px;
 }
 
 .icone_descricao {
@@ -116,26 +112,116 @@
   opacity: 1;
 }
 
-/*Slide*/
-.servicos {
-  overflow: hidden;
+@media (min-width: 430px) {
+  #organico {
+    background: url("../../img/servicos/organico_2.png") center center;
+    background-size: auto;
+  }
+
+  #receitas {
+    background: url("../../img/servicos/receitas_2.png") center center;
+    background-size: auto;
+  }
+
+  #cursos {
+    background: url("../../img/servicos/cursos_2.png") center center;
+    background-size: auto;
+  }
+
+  .item_servico h2 {
+    padding: 125px 0;
+  }
+
+  .descricao {
+    height: 298px;
+  }
 }
 
-.servicos ul {
-  display: flex;
+@media (min-width: 768px) {
+  .servicos ul {
+    display: flex;
+  }
+
+  .item_servico {
+    flex: 1;
+  }
+
+  #organico {
+    background: url("../../img/servicos/organico_3.png") center center;
+    background-size: cover;
+  }
+
+  #receitas {
+    background: url("../../img/servicos/receitas_3.png") center center;
+    background-size: cover;
+  }
+
+  #cursos {
+    background: url("../../img/servicos/cursos_3.png") center center;
+    background-size: cover;
+  }
+
+  .item_servico h2 {
+    padding: 130px 0;
+  }
+
+  .descricao {
+    height: 308px;
+  }
+
+  .descricao p {
+    font-size: 15px;
+    max-width: 200px;
+  }
+
+  .descricao p + p {
+    margin-top: 10px;
+  }
 }
 
-.item_servico {
-  flex-shrink: 0;
-  width: 100vh;
-  max-width: 363px;
-  margin: 0 20px;
+@media (min-width: 830px) {
+  .item_servico h2 {
+    padding: 156px 0;
+  }
+
+  .descricao p {
+    max-width: 260px;
+  }
+
+  .descricao {
+    height: 360px;
+  }
 }
 
-.item_servico:first-child {
-  margin-left: 0px;
+@media (min-width: 970px) {
+  .item_servico h2 {
+    padding: 191px 0;
+  }
+
+  .descricao {
+    height: 430px;
+  }
 }
 
-.item_servico:last-child {
-  margin-right: 0px;
+@media (min-width: 1126px) {
+  .icone_descricao {
+    display: none;
+  }
+
+  .item_servico h2 {
+    padding: 261px 0;
+  }
+
+  .descricao {
+    height: 570px;
+  }
+
+  .descricao p {
+    font-size: 20px;
+    max-width: 330px;
+  }
+
+  .descricao:hover {
+    opacity: 1;
+  }
 }
