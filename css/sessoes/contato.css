@@ -71,6 +71,13 @@ button[type="submit"] {
   margin: 0 auto;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #fffaf0;
+  color: #6f8c04;
 }
 
 .redes_sociais {
