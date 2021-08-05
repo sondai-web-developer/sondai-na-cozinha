@@ -68,7 +68,7 @@
   margin-top: 10px;
 }
 
-.infos_unidade a {
+.btn_ver_mapa {
   font-family: "Red Hat Display", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -83,7 +83,7 @@
   transition: 0.3s ease;
 }
 
-.infos_unidade a:hover {
+.btn_ver_mapa:hover {
   background: #fffaf0;
   color: #6f8c04;
 }
@@ -116,7 +116,7 @@
     margin-bottom: 15px;
   }
 
-  .infos_unidade a {
+  .btn_ver_mapa {
     margin: 0;
   }
 
@@ -167,7 +167,7 @@
     text-align: center;
   }
 
-  .infos_unidade a {
+  .btn_ver_mapa {
     margin: 0 auto;
   }
 }
