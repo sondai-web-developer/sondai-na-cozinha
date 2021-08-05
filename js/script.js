@@ -9,3 +9,7 @@ mostrarDescricao(); /*Abrir e fechar descricao*/
 logoScrollTop(); /*Ao clicar na logo, o scroll vertical irá deslizar até o topo do site*/
 scrollSuave(); /*Ao clicar em algum item do menu, o site irá deslizar até a sessão correspondente*/
 animacaoScroll(); /*Alguns elementos irão aparecer só quando o scroll estiver próximo */
+
+const agora = new Date();
+const anoAtual = document.querySelector('[data-ano="anoAtual"]');
+anoAtual.innerText = agora.getFullYear();
